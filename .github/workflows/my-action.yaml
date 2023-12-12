@@ -16,7 +16,7 @@ jobs:
       with:
         r-version: '3.5.3' # The R version to download (if necessary) and use. 
     # Use "renv" to retrieve R version recorded in renv.lock file.
-    - run: Rscript -e 'print("hello")'
+    - run: Rscript -e 'source("my_script.R")'
 
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v4
